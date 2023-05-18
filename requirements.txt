@@ -6,7 +6,3 @@ opencv_python_headless==4.7.0.72
 numpy==1.21.6
 Pillow==9.5.0
 tensorflow==2.11.0
-Conv2D
-Adam
-MaxPooling2D
-ImageDataGenerator
