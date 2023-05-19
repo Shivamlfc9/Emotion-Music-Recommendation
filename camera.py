@@ -1,5 +1,7 @@
 import numpy as np
 import cv2
+vid=cv2.VideoCapture(0, cv2.CAP_DSHOW)
+vid=cv2.VideoCapture(2, cv2.CAP_DSHOW)
 from PIL import Image
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Flatten
@@ -75,7 +77,7 @@ class FPS:
 class WebcamVideoStream:
     	
 		def __init__(self, src=0):
-			self.stream = cv2.VideoCapture(1)
+			self.stream = cv2.VideoCapture(src,cv2.CAP_DSHOW)
 			(self.grabbed, self.frame) = self.stream.read()
 			self.stopped = False
 
