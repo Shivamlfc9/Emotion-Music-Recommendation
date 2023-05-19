@@ -74,8 +74,8 @@ class FPS:
 ''' Class for using another thread for video streaming to boost performance '''
 class WebcamVideoStream:
     	
-		def __init__(self, src=1):
-			self.stream = cv2.VideoCapture(src,cv2.CAP_DSHOW)
+		def __init__(self, src=0):
+			self.stream = cv2.VideoCapture(0)
 			(self.grabbed, self.frame) = self.stream.read()
 			self.stopped = False
 
