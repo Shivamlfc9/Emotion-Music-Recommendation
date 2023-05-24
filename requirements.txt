@@ -1,5 +1,5 @@
 pip
-sudo apt-get install python3.10-tk
+pip install python3-tkinter
 Flask
 spotipy
 pandas
