@@ -1,5 +1,5 @@
 pip
-pip install python3-tkinter
+python3-tkinter
 Flask
 spotipy
 pandas
